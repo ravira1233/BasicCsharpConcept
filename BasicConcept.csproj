@@ -43,20 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DesignPattens\AbstractPattern\AbstractFactory\IVehicleFactory.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\AbstractProducts\IBike.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\AbstractProducts\ICar.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\ConcreateProducts\RegularBike.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\ConcreateProducts\RegularCar.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\ConcreateProducts\SportsBike.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\ConcreateProducts\SportsCar.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\ConcreteFactory\RegularVehicleFactory.cs" />
-    <Compile Include="DesignPattens\AbstractPattern\ConcreteFactory\SportsVehicleFactory.cs" />
-    <Compile Include="DesignPattens\FactoryPattern\CreditCardFactory.cs" />
-    <Compile Include="DesignPattens\FactoryPattern\ICreditCard.cs" />
-    <Compile Include="DesignPattens\FactoryPattern\Product\MoneyBack.cs" />
-    <Compile Include="DesignPattens\FactoryPattern\Product\Platinum.cs" />
-    <Compile Include="DesignPattens\FactoryPattern\Product\Titanium.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\AbstractFactory\IVehicleFactory.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\AbstractProducts\IBike.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\AbstractProducts\ICar.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\ConcreateProducts\RegularBike.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\ConcreateProducts\RegularCar.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\ConcreateProducts\SportsBike.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\ConcreateProducts\SportsCar.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\ConcreteFactory\RegularVehicleFactory.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\AbstractPattern\ConcreteFactory\SportsVehicleFactory.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\FactoryPattern\CreditCardFactory.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\FactoryPattern\ICreditCard.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\FactoryPattern\Product\MoneyBack.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\FactoryPattern\Product\Platinum.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\FactoryPattern\Product\Titanium.cs" />
+    <Compile Include="DesignPattens\CreationalPattern\SingleTon\Singleton.cs" />
     <Compile Include="EnumerableConcept\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BasicProgram\" />
+    <Folder Include="DesignPattens\BehaviourallPattern\" />
+    <Folder Include="DesignPattens\StructuralPattern\" />
     <Folder Include="Oops\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

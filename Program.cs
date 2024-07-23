@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using BasicConcept.DesignPattens.AbstractPattern.AbstractFactory;
 using BasicConcept.DesignPattens.AbstractPattern.AbstractProducts;
 using BasicConcept.DesignPattens.AbstractPattern.ConcreteFactory;
+using BasicConcept.DesignPattens.SingleTon;
 
 namespace BasicConcept
 {
@@ -24,9 +25,15 @@ namespace BasicConcept
 
             IVehicleFactory vehicleFactory = new RegularVehicleFactory();
             vehicleFactory.CreateBike();
-        ICar car=    vehicleFactory.CreateCar();
-        car.GetDetails();
-        Console.ReadLine();
+            ICar car = vehicleFactory.CreateCar();
+            car.GetDetails();
+
+            //Singleton pattern is called
+            Singleton _single = Singleton.GetInstance();
+            _single.PrintDetails("is called");
+            Singleton _single1 = Singleton.GetInstance();
+            _single1.PrintDetails("is called");
+            Console.ReadLine();
 
 
 
